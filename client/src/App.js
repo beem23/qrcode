@@ -21,7 +21,7 @@ function App() {
         formData.append('logo', logo, logo.name);
       }
 
-      const response = await axios.post('http://localhost:5001/generate', formData, {
+      const response = await axios.post('https://qrcode-backend.marlonbellot.com/generate', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
