@@ -79,14 +79,14 @@ function App() {
             onChange={(e) => setBackgroundColor(e.target.value)}
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="logo">Upload Logo:</label>
           <input
             type="file"
             id="logo"
             onChange={(e) => setLogo(e.target.files[0])}
           />
-        </div>
+        </div> */}
         <button onClick={generateQRCode}>Generate QR Code</button>
       </div>
       {qrCode && (
